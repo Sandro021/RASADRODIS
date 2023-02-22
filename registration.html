@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet"  type="text/css" href="style1.css" />
+    <title>რეგისტრაცია</title>
+
+<body>
+    <div class="container">
+        <form>
+            <h3>დარეგისტრირდი</h3>
+            <input type="text"  id="name"  placeholder="კაპიტნის სახელი და გვარი" required>
+            <input type="email"  id="email"  placeholder="Freeuni Mail" required>
+            <input type="teamName"  id="teamName"  placeholder="გუნდის სახელი" required>
+            <textarea type="members" rows="6"  id="members"  placeholder="გუნდის წევრები" ></textarea>
+            <button id="btn"> გაგზავნა    </button>
+         </form>
+ 
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        var btn = document.getElementById('btn')
+        btn.addEventListener('click',function(e) {
+            e.preventDefault()
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var teamName = document.getElementById('teamName').value;
+            var members = document.getElementById('members').value;
+            var body = 'name:' +name +'<br/> email: ' + email + '<br/>  teamName: ' + teamName + '<br/> members: ' +members; 
+
+                            Email.send({
+                    SecureToken : "dfe18759-08a5-414e-847f-dad2bd099a45",
+                    To : 'accforgaming2004@gmail.com',
+                    From : "s.mchedlidze2004@gmail.com",
+                    Subject : "ახალი მონაწილე",
+                    Body : body
+                }).then(
+                message => alert(message)
+                );
+
+        }  )
+
+
+    </script>
+    
+</body>
+
+</html>

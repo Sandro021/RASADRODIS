@@ -1,0 +1,86 @@
+body {
+    background-color: aqua;
+}
+
+
+
+
+.maintext {
+    text-align: center;
+    font-size: 70px
+    
+}
+.date {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+.exacttime {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+.registration {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+.registrationbutton {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+button {
+    background-color: lightgreen;
+    height: 42px;
+    width: 170px;
+    border-radius: 2px;
+    cursor: pointer;
+    border-color: rgb(209, 32, 32);
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+ .firstphoto {
+    width: 190px;
+    border-radius: 100px;
+    position: relative;
+    bottom: 400px;
+    left: 60px;
+ }
+
+
+ .secondphoto {
+    width: 220px;
+    position: relative;
+    bottom: 400px;
+    left: 1000px;
+ }
+
+
+ .thirdphoto {
+    width: 200px;
+    height: 135px;
+    position: relative;
+    bottom: 300px;
+    right: -880px;
+ }
+
+ .marcxena {
+    width: 180px;
+    position: relative;
+    bottom: 130px;
+    left: 66px;
+ }
+
+ .marjvena {
+    width: 190px;
+    position: relative;
+    bottom: 150px;
+    left: 235px;
+ }
